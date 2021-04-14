@@ -20,7 +20,7 @@ header{
 #navbar{
 	padding: 0px;
 	margin: 0px;
-	float: right;
+	float: left;
 }
 
 #navbar>ul>li{
@@ -35,6 +35,21 @@ header{
 #navbar ul li a{
 	text-decoration: none;
 	color: #000000;
+}
+
+#navbar li.login-signup {
+	float: right;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 10px;
+	border: 1px solid black;
+}
+#navbar li.login-signup:hover {
+	background-color: #deb887;
+
+}
+#navbar li.home:hover{
+	color: white;
 }
 
 .dropdown>a,
@@ -95,11 +110,12 @@ header{
 
 
 img {
-  padding: 90px;
+  padding: 50px;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
+
 
 footer {
   background-color: brown;
@@ -213,17 +229,17 @@ h1{
   background: transparent;
   outline: none;
   height: 40px;
-  color: #fff;
+  color: #000000;
   font-size: 16px;
 }
 
 .loginbox select{
-  border : none;
-  border-bottom: 1px solid#fff;
+  border : 1px solid black;
+	padding: 10px; 
   background: transparent;
   outline: none;
   height: 40px;
-  color: #fff;
+  color: #000000;
   font-size: 16px;
 }
 
@@ -238,7 +254,7 @@ h1{
   align-self: center;
 }
 .loginbox button:hover{
-  background: #ffc107;
+  background: #00ffff;
   color: #000;
 
 }
@@ -246,10 +262,17 @@ h1{
   text-decoration: none;
   font-size: 16px;
   line-height: 20px;
-  color:darkgrey;
+  color:Darkblue;
 
 }
-
+.loginbox button.cancelbtn{
+	background-color: #fff8dc;
+	color: red;
+}
+.loginbox button.cancelbtn:hover{
+	background-color: #dc143c;
+	color: white;
+}
 .loginbox a:hover{
-  color : #ffc107;
+  color : #D2691e;
 }
