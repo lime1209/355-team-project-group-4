@@ -1,7 +1,7 @@
 body{
 	width: 100%;
 	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
-	background-color: #f0ffff;
+	background-color: #ffffff;
 	padding: 0px;
 	margin: 0px;
 	color: #000000;
@@ -20,7 +20,7 @@ header{
 #navbar{
 	padding: 0px;
 	margin: 0px;
-	float: left;
+	float: right;
 }
 
 #navbar>ul>li{
@@ -35,21 +35,6 @@ header{
 #navbar ul li a{
 	text-decoration: none;
 	color: #000000;
-}
-
-#navbar li.login-signup {
-	float: right;
-	text-align: center;
-	text-decoration: none;
-	border-radius: 10px;
-	border: 1px solid black;
-}
-#navbar li.login-signup:hover {
-	background-color: #deb887;
-
-}
-#navbar li.home:hover{
-	color: white;
 }
 
 .dropdown>a,
@@ -110,12 +95,11 @@ header{
 
 
 img {
-  padding: 50px;
+  padding: 90px;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
-
 
 footer {
   background-color: brown;
@@ -166,7 +150,7 @@ h2{
 	text-align: center;
 	font-size: 22px;
 	line-height: 30px;
-	color: darkslategrey;
+
 }
 
 .p2{
@@ -229,17 +213,17 @@ h1{
   background: transparent;
   outline: none;
   height: 40px;
-  color: #000000;
+  color: #fff;
   font-size: 16px;
 }
 
 .loginbox select{
-  border : 1px solid black;
-	padding: 10px; 
+  border : none;
+  border-bottom: 1px solid#fff;
   background: transparent;
   outline: none;
   height: 40px;
-  color: #000000;
+  color: #fff;
   font-size: 16px;
 }
 
@@ -254,7 +238,7 @@ h1{
   align-self: center;
 }
 .loginbox button:hover{
-  background: #00ffff;
+  background: #ffc107;
   color: #000;
 
 }
@@ -262,17 +246,91 @@ h1{
   text-decoration: none;
   font-size: 16px;
   line-height: 20px;
-  color:Darkblue;
+  color:darkgrey;
 
 }
-.loginbox button.cancelbtn{
-	background-color: #fff8dc;
-	color: red;
-}
-.loginbox button.cancelbtn:hover{
-	background-color: #dc143c;
-	color: white;
-}
+
 .loginbox a:hover{
-  color : #D2691e;
+  color : #ffc107;
 }
+
+/****************************   FORM       ******************************/
+
+#logo{
+    width: 100%;
+    
+}
+
+#logoRightSide{
+    
+
+   
+}
+
+#logoRightSide h2{
+    
+    
+     text-align: center;
+     font-size: 2.vmin;
+     margin-top: 10vmax;
+    
+}
+
+#studentForm{
+    
+    margin-top: 1vmin;
+}
+
+
+#form div{
+    
+    margin-top: 4vmin;
+}
+
+#border{
+    border: 3px solid red; 
+}
+
+
+
+
+
+.headline{
+    text-decoration: underline;
+}
+
+
+hr {
+  border:none;
+  border-top:3px dotted #f00;
+  color:#fff;
+  background-color:#fff;
+  height:1px;
+  width:50%;
+}
+
+
+.usscOnlyUse{
+    padding-bottom: 30px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
