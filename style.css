@@ -1,7 +1,7 @@
 body{
 	width: 100%;
 	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
-	background-color: #f0ffff;
+	background-color: #ffffff;
 	padding: 0px;
 	margin: 0px;
 	color: #000000;
@@ -150,7 +150,7 @@ h2{
 	text-align: center;
 	font-size: 22px;
 	line-height: 30px;
-	color: darkslategrey;
+
 }
 
 .p2{
@@ -253,3 +253,91 @@ h1{
 .loginbox a:hover{
   color : #ffc107;
 }
+
+/****************************   FORM       ******************************/
+
+#logo{
+    width: 100%;
+    
+}
+
+#logoRightSide{
+    
+
+   
+}
+
+#logoRightSide h2{
+    
+    
+     text-align: center;
+     font-size: 2.vmin;
+     margin-top: 10vmax;
+    
+}
+
+#studentForm{
+    
+    margin-top: 1vmin;
+}
+
+
+#form div{
+    
+    margin-top: 4vmin;
+}
+
+#border{
+    border: 3px solid red; 
+}
+
+#submit{
+    
+    border: 3px solid green;
+}
+
+#logout{
+    
+    border: 3px solid red;
+}
+
+
+.headline{
+    text-decoration: underline;
+}
+
+
+hr {
+  border:none;
+  border-top:3px dotted #f00;
+  color:#fff;
+  background-color:#fff;
+  height:1px;
+  width:50%;
+}
+
+
+.usscOnlyUse{
+    padding-bottom: 30px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
