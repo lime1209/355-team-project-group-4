@@ -291,8 +291,15 @@ h1{
     border: 3px solid red; 
 }
 
+#submit{
+    
+    border: 3px solid green;
+}
 
-
+#logout{
+    
+    border: 3px solid red;
+}
 
 
 .headline{

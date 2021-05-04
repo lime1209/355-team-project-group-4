@@ -347,37 +347,66 @@
                     
                     
                     
-                <div class="row">
+        <div class="row">
                     
-                   <div class="col-12">
+            <div class="col-12">
                     
-                    
+            <div class="col-12">
                    <p><br><br><br><br>
                     2. You must submit a typed appeal statement with responses to the following questions. Your responses must be labeled as A, (and if applicable, A1 and A2), B and C. Appeal statements not typed or labeled will be returned.<br><br> 
-                        
-                    &emsp;&emsp;&emsp;&emsp;A. Did you receive a WU or Z grade(s)? (If your answer is “yes”, you must respond to the questions below.)<br> 
-                    
-                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;1. What are the extenuating circumstances that prevented you from completing the course(s)? <br>
-                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2. Why did you not withdraw from the course(s) by the published withdrawal deadline date?<br><br>
-                                
-                    &emsp;&emsp;&emsp;&emsp;B. Did you receive an INC/FIN, ABS/FAB, or PEN/FPN grade(s)? (If your answer is “yes”, you must respond to the question below. <br>
+               
                        
-                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;What are the extenuating circumstances that prevented you from completing the outstanding course requirements by the end of the semester immediately following the semester in which you received the temporary grade(s)?<br><br><br> 
-                                
+                       
+                <div class="col-12">
+                    A. <u>Did you receive a WU or Z grade(s)?</u> (If your answer is “yes”, you must respond to the questions below.)<br><br> 
+               
+                       
+                       <div class="col-12">
+                    1. What are the extenuating circumstances that prevented you from completing the course(s)? <br>
+                        <input class="textbox col-8 offset-1" type="textarea" id="questionA1" placeholder="If 'YES' answer here for A1">
+                       <br>
+                       </div>
+                       
+                       <div class="col-12">
+                   2. Why did you not withdraw from the course(s) by the published withdrawal deadline date?<br>
+                        <input class="textbox col-8 offset-1" type="textarea" id="questionA2" placeholder="If 'YES' answer here for A2"><br><br>
+                           
+                       </div>
+                   
+                       
+                   
+                    B. <u>Did you receive an INC/FIN, ABS/FAB, or PEN/FPN grade(s)?</u> (If your answer is “yes”, you must respond to the question below. <br><br>
+                     <div class="col-12">      
+                    What are the extenuating circumstances that prevented you from completing the outstanding course requirements by the end of the semester immediately following the semester in which you received the temporary grade(s)?<br>
+                                 <input class="textbox col-8 offset-1" type="textarea" id="questionB" placeholder="If 'YES' answer here for B"><br><br>
+                       
+                      </div>
+                </div>
+                    
+            </div> 
+                       
+            <div class="col-12">
                     The reason(s) given in your responses above must be supported with official, semester-specific, dated documentation that is not returnable, but will be held in strict confidence. (The USSC may accept as documentation, third party notarized verification of the events only when official documentation may not be possible.) Failure to submit documentation may result in the denial of this appeal. All documentation is kept confidential, however, be aware that any documentation submitted to the USSC is subject to verification at the USSC’s discretion. If falsified documentation is submitted, you will be referred to the Office of the Vice President of Student Affairs for disciplinary action. Be sure to retain a copy of all documentation submitted with your appeal for your records since the USSC will not furnish any copies in the future.<br><br><br>
-                            
-                    &emsp;&emsp;&emsp;&emsp;C. Were you registered for other courses in the same semester as the course(s) that you are requesting a retroactive withdrawal? (If your answer is “yes”, you must respond to the question below.)<br>
+                    
+                    
+                <div class="col-12">       
+                   C. Were you registered for other courses in the same semester as the course(s) that you are requesting a retroactive withdrawal? (If your answer is “yes”, you must respond to the question below.)<br><br>
                                 
-                    &emsp;&emsp;&emsp;&emsp;&emsp;How did the extenuating circumstances, which you indicated in A and/or B above, not affect the other course(s)?<br><br><br>
-                                
+                   How did the extenuating circumstances, which you indicated in A and/or B above, not affect the other course(s)?<br>
+                        <input class="textbox col-8 offset-1" type="textarea" id="questionC" placeholder="If 'YES' answer here for C"><br><br>
+                        
+                </div> 
+            </div>      
+                       
+                <div class="col-12">
                     4. Have your instructor complete their portion of the Course Withdrawal Evaluation Form. You must submit one Course Withdrawal Evaluation Form for each course that you are requesting consideration for a retroactive withdrawal. If the USSC approves your appeal for a retroactive withdrawal and your instructor indicated your performance as numbers 1 or 3 on the Course Withdrawal Evaluation Form, a W grade (withdrawal, passing) will be assigned. The W grade does not calculate in your GPA. If number 2 is indicated, a WF (withdrawal, failing) grade will be assigned. The WF grade calculates as a failure in your GPA.<br><br>
                             
                     <b><u>Financial Aid Recipients</u></b>: It is your responsibility to speak with your financial aid advisor BEFORE submitting your appeal for a retroactive withdrawal. If your appeal is approved, you may be financially liable if you received financial aid for the course(s) in question. In addition, it may also affect future financial aid liability.<br> 
                             
                     I have read and understand the information and instructions to appeal for a retroactive withdrawal from prior semester course(s):   
+                </div>     
                        
-                       
-                    </p>
+                    
                     </div> 
                                         
                 </div>                       
@@ -422,10 +451,13 @@
 		</div>
 	</div>
 	<div class="policy">
-		-
+		
 	</div>
 	<div class="action">
-		<button type="button" class="btn submitButton" id="submit">Start An Application</button>
-		<button type="button" class="btn logOutButton" id="logout">Log out</button>
+        <div class="row justify-content-center" id="pagebottom">
+        <button type="button" class="btn logOutButton col-2" id="logout">Log out</button>
+        <button type="button" class="btn submitButton col-2 offset-3" id="submit">Submit Form</button>      
+        </div>
+		
 	</div>
 	
