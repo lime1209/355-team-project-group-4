@@ -6,6 +6,7 @@
 	<title>Student Form</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="style.css">
+    
 </head>
 <body>
 	<div class="container-fluid">
@@ -91,12 +92,12 @@
                         
                                 <div class="col-6">
                         <label for="homeNum" >Home Tel#</label>
-							<input type="textarea" class="form-control" id="homeNum" placeholder="10 digits">
+							<input type="textarea" class="form-control" id="homeNum" placeholder="10 digits" maxlength="10">
                         </div>
                         
                            <div class="col-6">
                         <label for="cellNum" >Cell Phone#:</label>
-							<input type="textarea" class="form-control" id="cellNum" placeholder="10 digits">
+							<input type="textarea" class="form-control" id="cellNum" placeholder="10 digits" maxlength="10">
                         </div>
                         
                         
@@ -128,28 +129,30 @@
                         
                         <div class="col-2">
                         <label for="approved" >Approved:</label>
-							<input type="textarea" class="form-control" id="approved" placeholder="">
+							<input type="textarea" class="form-control ussc" id="approved" placeholder="">
                         </div>
                         
                         <div class="col-2">
                         <label for="denied" >Denied:</label>
-							<input type="textarea" class="form-control" id="denied" placeholder="">
+							<input type="textarea" class="form-control ussc" id="denied" placeholder="">
                         </div>
                         
                         <div class="col-4">
                         <label for="approved" >Date:</label>
-							<input type="textarea" class="form-control" id="approved" placeholder="">
+							<input type="textarea" class="form-control ussc" id="approved" placeholder="">
                         </div>
                         
                         <div class="col-4">
                         <label for="emailSent" >Email Sent:</label>
-							<input type="textarea" class="form-control" id="emailSent" placeholder="">
+							<input type="textarea" class="form-control ussc" id="emailSent" placeholder="">
                         </div>
                         
                     </div>
                         
                         
                         
+    
+	
                         
                      
                     
@@ -176,9 +179,40 @@
                 
                 
                 <form class="studentForm_instructionToAppeal">
-                <p>1. Indicate the course(s) you are requesting consideration for a retroactive withdrawal. <br><br></p>
+                <p>1. Indicate the course(s) you are requesting consideration for a retroactive withdrawal. <br></p>
+                    
+                    
+                    
+	
+            
+          
+			<div class="col-12 col-md-12 section py-3 schedule">
+			<table id="Schedule">
+				<tr>
+					<th>Select</th>
+					<th>Class</th>
+					<th>Description</th>
+					<th>Days/Times</th>
+					<th>Room</th>
+					<th>Instructor</th>
+					<th>Units</th>
+					<th>Status</th>
+				</tr>
+				<tr>
+					<td><input type="checkbox" class="select" name="select"></td>
+					<td class="className"></td>
+					<td class="descriptions"></td>
+					<td class="daysAndTimes"></td>
+					<td class="meetingRooms"></td>
+					<td class="instructor"></td>
+					<td class="units"></td>
+					<td class="status"></td>
+				</tr>
+			</table>	
+	</div>
                 
-                
+                <br><br><br>
+        <div class="container-fluid">
             <div class="row">        
                     
                 <div class="col-3" id="col1">
@@ -188,25 +222,25 @@
                 
                      
            
-                         <input type="textarea" class="form-control" id="row1" placeholder="">
+                         <input type="textarea" class="form-control" id="row1" placeholder="" disabled = "disabled">
            
                     
                     
-                         <input type="textarea" class="form-control" id="row2" placeholder="">
+                         <input type="textarea" class="form-control" id="row2" placeholder="" disabled = "disabled">
                 
                     
                      
-                         <input type="textarea" class="form-control" id="row3" placeholder="">
+                         <input type="textarea" class="form-control" id="row3" placeholder="" disabled = "disabled">
               
                      
                      
                           
-                         <input type="textarea" class="form-control" id="row4" placeholder="">
+                         <input type="textarea" class="form-control" id="row4" placeholder="" disabled = "disabled">
                  
                      
                      
                     
-                         <input type="textarea" class="form-control" id="row5" placeholder="">  
+                         <input type="textarea" class="form-control" id="row5" placeholder="" disabled = "disabled">  
       
                 
                      
@@ -223,24 +257,24 @@
                      
                      
             
-                         <input type="textareaarea" class="form-control" id="row1" placeholder="">
+                         <input type="textareaarea" class="form-control" id="row1" placeholder="" disabled = "disabled">
                     
                     
              
-                         <input type="textarea" class="form-control" id="row2" placeholder="">
+                         <input type="textarea" class="form-control" id="row2" placeholder="" disabled = "disabled">
            
                     
                      
            
-                         <input type="textarea" class="form-control" id="row3" placeholder="">
+                         <input type="textarea" class="form-control" id="row3" placeholder="" disabled = "disabled">
                 
                      
                     
-                         <input type="textarea" class="form-control" id="row4" placeholder="">
+                         <input type="textarea" class="form-control" id="row4" placeholder="" disabled = "disabled">
                 
                      
           
-                         <input type="textarea" class="form-control" id="row5" placeholder=""> 
+                         <input type="textarea" class="form-control" id="row5" placeholder="" disabled = "disabled"> 
                 
                      
                 </div>    
@@ -248,31 +282,31 @@
                 
                     
                     
-                <div class="col-3" id="col3">
+                <div class="col-2" id="col3">
                    
           
                         <h1><u>Semester and Year</u></h1>
                  
                      
               
-                         <input type="textarea" class="form-control" id="row1" placeholder="">
+                         <input type="textarea" class="form-control" id="row1" placeholder="" disabled = "disabled">
                   
                     
                 
-                         <input type="textarea" class="form-control" id="row2" placeholder="">
+                         <input type="textarea" class="form-control" id="row2" placeholder="" disabled = "disabled">
                  
                      
               
-                         <input type="textarea" class="form-control" id="row3" placeholder="">
+                         <input type="textarea" class="form-control" id="row3" placeholder="" disabled = "disabled">
                 
                      
                      
                   
-                         <input type="textarea" class="form-control" id="row4" placeholder="">
+                         <input type="textarea" class="form-control" id="row4" placeholder=""disabled = "disabled">
                  
                      
             
-                         <input type="textarea" class="form-control" id="row5" placeholder="">  
+                         <input type="textarea" class="form-control" id="row5" placeholder=""disabled = "disabled">  
           
                 
                      
@@ -287,25 +321,25 @@
                         <h1><u>Instructor's Name</u></h1>
    
      
-                         <input type="textarea" class="form-control" id="row1" placeholder="">
+                         <input type="textarea" class="form-control" id="row1" placeholder=""disabled = "disabled">
           
                     
                     
                  
-                         <input type="textarea" class="form-control" id="row2" placeholder="">
+                         <input type="textarea" class="form-control" id="row2" placeholder=""disabled = "disabled">
              
                     
                     
-                         <input type="textarea" class="form-control" id="row3" placeholder="">
+                         <input type="textarea" class="form-control" id="row3" placeholder="" disabled = "disabled">
                  
                      
                      
                              
-                         <input type="textarea" class="form-control" id="row4" placeholder="">
+                         <input type="textarea" class="form-control" id="row4" placeholder=""disabled = "disabled">
                  
                      
                      
-                         <input type="textarea" class="form-control" id="row5" placeholder="">  
+                         <input type="textarea" class="form-control" id="row5" placeholder=""disabled = "disabled">  
                     
                 
                      
@@ -313,38 +347,38 @@
                     
                 
                 
-                  <div class="col-1" id="col5">
+                  <div class="col-2" id="col5">
                    
              
                         <h1><u>Grade Rec'd</u></h1>
                     
                      
-                   
-                         <input type="textarea" class="form-control" id="row1" placeholder="">
+                        <div class="col-10">
+                         <input type="textarea" class="form-control" id="row1" placeholder=""disabled = "disabled">
                     
                     
                     
                     
-                         <input type="textarea" class="form-control" id="row2" placeholder="">
+                         <input type="textarea" class="form-control" id="row2" placeholder=""disabled = "disabled">
                     
                     
                      
-                         <input type="textarea" class="form-control" id="row3"  placeholder="">
+                         <input type="textarea" class="form-control" id="row3"  placeholder=""disabled = "disabled">
                    
                      
                                  
-                         <input type="textarea" class="form-control" id="row4" value="" placeholder="">
+                         <input type="textarea" class="form-control" id="row4" value="" placeholder=""disabled = "disabled">
                   
                      
                   
-                         <input type="textarea" class="form-control" id="row5" value="" placeholder=""> 
+                         <input type="textarea" class="form-control" id="row5" value="" placeholder=""disabled = "disabled"> 
                 
-                     
+                        </div>
                     </div>    
                         
                 </div>    
                     
-                    
+         </div>           
                     
                     
         <div class="row">
@@ -360,17 +394,11 @@
                 <div class="col-12">
                     <div class="col-12">
                         A. <u>Did you receive a WU or Z grade(s)?</u> (If your answer is “yes”, you must respond to the questions below.)<br><br> 
-                                <input type="checkbox" id="gradeCheckboxYes" name = "gradeCheckboxYes" value="Yes">
-                                    <label for="gradeCheckboxYes">Yes</label><br>
-                                <input type="checkbox" id="gradeCheckboxNo" name = "gradeCheckboxNo" value="No">
-                                    <label for="gradeCheckboxNo">No</label><br>
+                               
                     </div> 
                        <div class="col-12">
                     1. What are the extenuating circumstances that prevented you from completing the course(s)? <br>
-                            <input type="checkbox" id="gradeCheckboxBYes" name = "gradeCheckboxBYes" value="Yes">
-                                <label for="gradeCheckboxBYes">Yes</label><br>
-                            <input type="checkbox" id="gradeCheckboxBNo" name = "gradeCheckboxBNo" value="No">
-                                <label for="gradeCheckboxBNo">No</label><br>    
+                               
 
                         <input class="textbox col-8 offset-1" type="textarea" id="questionA1" placeholder="If 'YES' answer here for A1">
                        <br>
@@ -470,3 +498,9 @@
 		
 	</div>
 	
+    
+    <script src="studentFormScript.js"></script>
+    
+    
+    </body>
+</html>

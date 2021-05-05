@@ -290,6 +290,29 @@ h1{
 #border{
     border: 3px solid red; 
 }
+#Schedule{
+    
+    border-collapse:collapse;
+    border:1px, solid, black;
+    width:100%;
+    
+}
+#Schedule tr{
+    border: 1px solid black;
+ 
+}
+#Schedule th{
+    border: 1px solid black;
+
+}
+
+#Schedule td{
+    border: 1px solid black;
+
+}
+
+
+
 
 #submit{
     
@@ -323,7 +346,14 @@ hr {
 }
 
 
-
+.blocked{
+    background color: red;
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 9;
+}
 
 
 
