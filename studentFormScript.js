@@ -1,16 +1,17 @@
-let title = document.title;
+var title = document.title;
 let usscRow = document.getElementsByClassName("row usscOnlyUse")[0];
 let usscInputs = document.getElementsByClassName("ussc");
 
 let submission = document.getElementById("submitBtn");
 let requiredInput = document.getElementsByClassName("reqInput");
 
+let form = document.getElementById("studentForm");
 
 
 if(title == "Student Form"){
     
 
-    
+    console.log("this is the student form USSC inputs will be disabled for student");
     let blockedBorder = document.createElement("div");
     blockedBorder.className = "blocked";
     
@@ -20,18 +21,21 @@ if(title == "Student Form"){
     for(let i = 0; i < usscInputs.length; i++){
         usscInputs[i].setAttribute("disabled","disabled");
         
-    }
+    };
     
 }
 
 
-console.log("done");
-                                 
-                                                 
-                                                   
-submission.addEventListener("click", (e)=>{
-   e.preventDefault();
-   for(let i=0; i < requiredInput.length; i++){
+
+ 
+
+
+
+form.addEventListener("submit", (e)=>{
+    
+    
+  
+    for(let i=0; i < requiredInput.length; i++){
        
        
        
@@ -42,21 +46,29 @@ submission.addEventListener("click", (e)=>{
        }else{
            
            alert("Submission success");
+           return;
        }
-   } 
+        
+    }
     
-    
-    
+}); 
+
+                                                 
+                                                   
+submission.addEventListener("click", (e)=>{
     
 });    
+    
+    
 
 
     let log_out = document.getElementById("logout");
+    
     log_out.addEventListener("click", (event)=>{
         event.preventDefault();
         window.location.replace("login.html");
         
-    })
+    });
                                                  
 
 
