@@ -24,9 +24,12 @@
                     <a href="https://myqc.qc.cuny.edu/StudentLife/USSC/default.aspx">https://myqc.qc.cuny.edu/StudentLife/USSC/default.aspx</a>
                 </h2>
                 
-                	</div>
+            </div>
+            
+        </div>
+    </div>
 				
-            <form class = "form"id="studentForm">
+            <form class ="form" id="studentForm" action="" method="POST">
                 <div class="container-fluid" id="border">
                     <div class="row">
                         
@@ -38,12 +41,12 @@
                         <!-- Date and ID -->
                         <div class="col-6">
                         <label for="dateUSSC" class="" >Date submitted to USSC:</label>
-							<input type="date" class="form-control" id="dateUSSC" placeholder="MM/DD/YYYY">
+							<input type="date" class="form-control reqInput" id="dateUSSC" placeholder="MM/DD/YYYY" name="date">
                         </div>
                         
-                           <div class="col-6">
-                        <label for="cunyId" >CUNYFirst ID #:</label>
-							<input type="textarea" class="form-control" id="cunyId" placeholder="8 digits">
+                        <div class="col-6">
+                            <label for="cunyId" >CUNYFirst ID #:</label>
+							<input type="" class="form-control reqInput" id="cunyId" placeholder="8 digits" maxlength="8" onkeypress='return event.charCode >= 48 && event.charCode <= 57' name="id">
                         </div>
                         
                         
@@ -51,20 +54,20 @@
                         
                         <!-- Name -->
                        
-                          <div class="col-5">
-                        <label for="lName" >Last:</label>
-							<input type="textarea" class="form-control" id="lName" placeholder="Last Name">
+                        <div class="col-5">
+                            <label for="lName" >Last:</label>
+							<input type="" class="form-control reqInput" id="lName" placeholder="Last Name" name="lName">
                         </div>
                         
-                           <div class="col-5">
-                        <label for="fName">First Name:</label>
-							<input type="textarea" class="form-control" id="fName" placeholder="First Name">
+                        <div class="col-5">
+                            <label for="fName">First Name:</label>
+							<input type="" class="form-control reqInput" id="fName" placeholder="First Name" name="fName">
                         </div>
                         
                         
-                           <div class="col-2">
-                        <label for="mInitial">Middle initial:</label>
-							<input type="textarea" class="form-control" id="mInitial" placeholder="MI.">
+                        <div class="col-2">
+                            <label for="mInitial">Middle initial:</label>
+							<input type="" class="form-control" id="mInitial" placeholder="MI." name="mName">
                         </div>
                         
     
@@ -72,14 +75,14 @@
                         
                         <!--Mailing Address and 365 email -->
                             
-                            <div class="col-12">
-                        <label for="mailing" >Mailing Address:</label>
-							<input type="textarea" class="form-control" id="mailing" placeholder="Street address, city, state, zip">
+                        <div class="col-12">
+                            <label for="mailing" >Mailing Address:</label>
+							<input type="" class="form-control reqInput" id="mailing" placeholder="Street address, city, state, zip" name="address">
                         </div>
                         
-                           <div class="col-12">
-                        <label for="365" >Queens College Office 365 Email Address:</label>
-							<input type="textarea" class="form-control" id="365" placeholder="johndoe@qc.cuny.edu">
+                        <div class="col-12">
+                            <label for="365" >Queens College Office 365 Email Address:</label>
+							<input type="textarea" class="form-control reqInput" id="365" placeholder="johndoe@qc.cuny.edu" name="email">
                         </div>
                         
                         
@@ -90,21 +93,21 @@
                         
                        <!-- Telephone Number -->
                         
-                                <div class="col-6">
-                        <label for="homeNum" >Home Tel#</label>
-							<input type="textarea" class="form-control" id="homeNum" placeholder="10 digits" maxlength="10">
-                        </div>
+                    <div class="col-6">
+                            <label for="homeNum" >Home Tel#</label>
+							<input type="textarea" class="form-control reqInput" id="homeNum" placeholder="10 digits" maxlength="10" onkeypress='return event.charCode >= 48 && event.charCode <= 57' name="homePhoneNum">
+                    </div>
                         
-                           <div class="col-6">
-                        <label for="cellNum" >Cell Phone#:</label>
-							<input type="textarea" class="form-control" id="cellNum" placeholder="10 digits" maxlength="10">
-                        </div>
-                        
-                        
+                    <div class="col-6">
+                            <label for="cellNum" >Cell Phone#:</label>
+							<input type="textarea" class="form-control reqInput" id="cellNum" placeholder="10 digits" maxlength="10" onkeypress='return event.charCode >= 48 && event.charCode <= 57' name="cellPhoneNum">
+                    </div>
                         
                         
                         
                         
+                        
+                    <div class="row">
                         <hr class="col-12">
                         
                         <p class="col-12">As per Academic Senate policy, retroactive withdrawals, which are withdrawals requested after the semester has been completed, shall be handled in essentially the same manner as late withdrawals. Such withdrawals shall require documentation and verification of the extenuating circumstances that prevented the student from completing the course(s) AND from withdrawing during the appropriate time limits during the semester in question. <br><br>
@@ -122,14 +125,15 @@
                         
                         
                         <hr class="col-12">
+                    </div>
                         
-                        
-                    <div class="row usscOnlyUse">
+                    <div class="row usscOnlyUse justify-content-center">
+                      
                         <h2 class ="col-12"><b>USSC USE ONLY: </b></h2>
                         
                         <div class="col-2">
                         <label for="approved" >Approved:</label>
-							<input type="textarea" class="form-control ussc" id="approved" placeholder="">
+							<input type="textarea" class="form-control b ussc" id="approved" placeholder="">
                         </div>
                         
                         <div class="col-2">
@@ -147,6 +151,7 @@
 							<input type="textarea" class="form-control ussc" id="emailSent" placeholder="">
                         </div>
                         
+                            
                     </div>
                         
                         
@@ -157,19 +162,18 @@
                      
                     
                     
-                    </div>
+                </div> <!--DIV ROW-->
                 
-                 </div> 
+            </div> <!--DIV container-fluid-->
              
-            </form>
         
-			</div>
+                
 	
         
         
         <!-- Row Two start -->
         
-            <div class="row" id="border">
+        <div class="row" id="border">
                 <div class="col-12">
                     <h2 class="headline"><br>INSTRUCTIONS TO APPEAL FOR A RETROACTIVE WITHDRAWAL FROM PRIOR SEMESTER COURSES<br><br></h2>
                 
@@ -178,72 +182,73 @@
                 
                 
                 
-                <form class="studentForm_instructionToAppeal">
+               
                 <p>1. Indicate the course(s) you are requesting consideration for a retroactive withdrawal. <br></p>
                     
                     
                     
 	
             
-          
-			<div class="col-12 col-md-12 section py-3 schedule">
-			<table id="Schedule">
-				<tr>
-					<th>Select</th>
-					<th>Class</th>
-					<th>Description</th>
-					<th>Days/Times</th>
-					<th>Room</th>
-					<th>Instructor</th>
-					<th>Units</th>
-					<th>Status</th>
-				</tr>
-				<tr>
-					<td><input type="checkbox" class="select" name="select"></td>
-					<td class="className"></td>
-					<td class="descriptions"></td>
-					<td class="daysAndTimes"></td>
-					<td class="meetingRooms"></td>
-					<td class="instructor"></td>
-					<td class="units"></td>
-					<td class="status"></td>
-				</tr>
-			</table>	
-	</div>
-                
+
+                <div class="col-12 col-md-12 section py-3 schedule">
+                    <table id="Schedule">
+                        <tr>
+                            <th>Select</th>
+                            <th>Class</th>
+                            <th>Description</th>
+                            <th>Days/Times</th>
+                            <th>Room</th>
+                            <th>Instructor</th>
+                            <th>Units</th>
+                            <th>Status</th>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" class="select" name="select"></td>
+                            <td class="className"></td>
+                            <td class="descriptions"></td>
+                            <td class="daysAndTimes"></td>
+                            <td class="meetingRooms"></td>
+                            <td class="instructor"></td>
+                            <td class="units"></td>
+                            <td class="status"></td>
+                        </tr>
+                    </table>	
+                </div>
+            
+            
+
                 <br><br><br>
-        <div class="container-fluid">
-            <div class="row">        
-                    
-                <div class="col-3" id="col1">
-                   
-                    
+            <div class="container-fluid">
+                <div class="row">        
+
+                    <div class="col-3" id="col1">
+
+
                         <h1><u>Course and number</u></h1>
-                
-                     
-           
-                         <input type="textarea" class="form-control" id="row1" placeholder="" disabled = "disabled">
-           
+
+
+
+                        <input type="textarea" class="form-control" placeholder="" disabled = "disabled">
+          
                     
                     
-                         <input type="textarea" class="form-control" id="row2" placeholder="" disabled = "disabled">
-                
+                 
+                         <input type="textarea" class="form-control" placeholder="" disabled = "disabled">
+             
                     
-                     
-                         <input type="textarea" class="form-control" id="row3" placeholder="" disabled = "disabled">
-              
-                     
-                     
-                          
-                         <input type="textarea" class="form-control" id="row4" placeholder="" disabled = "disabled">
+                    
+                         <input type="textarea" class="form-control" placeholder="" disabled = "disabled">
                  
                      
                      
-                    
-                         <input type="textarea" class="form-control" id="row5" placeholder="" disabled = "disabled">  
-      
-                
+                             
+                         <input type="textarea" class="form-control" placeholder="" disabled = "disabled">
+                 
                      
+                     
+                         <input type="textarea" class="form-control" placeholder="" disabled = "disabled">    
+      
+                 
                 </div>    
                     
                     
@@ -257,24 +262,25 @@
                      
                      
             
-                         <input type="textareaarea" class="form-control" id="row1" placeholder="" disabled = "disabled">
-                    
-                    
-             
-                         <input type="textarea" class="form-control" id="row2" placeholder="" disabled = "disabled">
-           
-                    
-                     
-           
-                         <input type="textarea" class="form-control" id="row3" placeholder="" disabled = "disabled">
-                
-                     
-                    
-                         <input type="textarea" class="form-control" id="row4" placeholder="" disabled = "disabled">
-                
-                     
+                        <input type="textarea" class="form-control" placeholder="" disabled = "disabled">
           
-                         <input type="textarea" class="form-control" id="row5" placeholder="" disabled = "disabled"> 
+                    
+                    
+                 
+                         <input type="textarea" class="form-control" placeholder="" disabled = "disabled">
+             
+                    
+                    
+                         <input type="textarea" class="form-control" placeholder="" disabled = "disabled">
+                 
+                     
+                     
+                             
+                         <input type="textarea" class="form-control" placeholder="" disabled = "disabled">
+                 
+                     
+                     
+                         <input type="textarea" class="form-control" placeholder="" disabled = "disabled">  
                 
                      
                 </div>    
@@ -289,24 +295,24 @@
                  
                      
               
-                         <input type="textarea" class="form-control" id="row1" placeholder="" disabled = "disabled">
+                         <input type="textarea" class="form-control" placeholder="" disabled = "disabled" value="">
                   
                     
                 
-                         <input type="textarea" class="form-control" id="row2" placeholder="" disabled = "disabled">
+                         <input type="textarea" class="form-control" placeholder="" disabled = "disabled">
                  
                      
               
-                         <input type="textarea" class="form-control" id="row3" placeholder="" disabled = "disabled">
+                         <input type="textarea" class="form-control" placeholder="" disabled = "disabled">
                 
                      
                      
                   
-                         <input type="textarea" class="form-control" id="row4" placeholder=""disabled = "disabled">
+                         <input type="textarea" class="form-control" placeholder="" disabled = "disabled">
                  
                      
             
-                         <input type="textarea" class="form-control" id="row5" placeholder=""disabled = "disabled">  
+                         <input type="textarea" class="form-control" placeholder="" disabled = "disabled">  
           
                 
                      
@@ -321,25 +327,25 @@
                         <h1><u>Instructor's Name</u></h1>
    
      
-                         <input type="textarea" class="form-control" id="row1" placeholder=""disabled = "disabled">
+                         <input type="textarea" class="form-control" placeholder="" disabled = "disabled">
           
                     
                     
                  
-                         <input type="textarea" class="form-control" id="row2" placeholder=""disabled = "disabled">
+                         <input type="textarea" class="form-control" placeholder="" disabled = "disabled">
              
                     
                     
-                         <input type="textarea" class="form-control" id="row3" placeholder="" disabled = "disabled">
+                         <input type="textarea" class="form-control" placeholder="" disabled = "disabled">
                  
                      
                      
                              
-                         <input type="textarea" class="form-control" id="row4" placeholder=""disabled = "disabled">
+                         <input type="textarea" class="form-control" placeholder="" disabled = "disabled">
                  
                      
                      
-                         <input type="textarea" class="form-control" id="row5" placeholder=""disabled = "disabled">  
+                         <input type="textarea" class="form-control" placeholder="" disabled = "disabled">  
                     
                 
                      
@@ -354,24 +360,25 @@
                     
                      
                         <div class="col-10">
-                         <input type="textarea" class="form-control" id="row1" placeholder=""disabled = "disabled">
+                          <input type="textarea" class="form-control" placeholder="" disabled = "disabled">
+          
                     
                     
+                 
+                         <input type="textarea" class="form-control" placeholder="" disabled = "disabled">
+             
                     
                     
-                         <input type="textarea" class="form-control" id="row2" placeholder=""disabled = "disabled">
-                    
-                    
+                         <input type="textarea" class="form-control" placeholder="" disabled = "disabled">
+                 
                      
-                         <input type="textarea" class="form-control" id="row3"  placeholder=""disabled = "disabled">
-                   
                      
-                                 
-                         <input type="textarea" class="form-control" id="row4" value="" placeholder=""disabled = "disabled">
-                  
+                             
+                         <input type="textarea" class="form-control" placeholder="" disabled = "disabled">
+                 
                      
-                  
-                         <input type="textarea" class="form-control" id="row5" value="" placeholder=""disabled = "disabled"> 
+                     
+                         <input type="textarea" class="form-control" placeholder="" disabled = "disabled">  
                 
                         </div>
                     </div>    
@@ -381,7 +388,7 @@
          </div>           
                     
                     
-        <div class="row">
+    <div class="row">
                     
             <div class="col-12">
                     
@@ -435,69 +442,61 @@
                 </div> 
             </div>      
                        
-                <div class="col-12">
+            <div class="col-12">
                     4. Have your instructor complete their portion of the Course Withdrawal Evaluation Form. You must submit one Course Withdrawal Evaluation Form for each course that you are requesting consideration for a retroactive withdrawal. If the USSC approves your appeal for a retroactive withdrawal and your instructor indicated your performance as numbers 1 or 3 on the Course Withdrawal Evaluation Form, a W grade (withdrawal, passing) will be assigned. The W grade does not calculate in your GPA. If number 2 is indicated, a WF (withdrawal, failing) grade will be assigned. The WF grade calculates as a failure in your GPA.<br><br>
                             
                     <b><u>Financial Aid Recipients</u></b>: It is your responsibility to speak with your financial aid advisor BEFORE submitting your appeal for a retroactive withdrawal. If your appeal is approved, you may be financially liable if you received financial aid for the course(s) in question. In addition, it may also affect future financial aid liability.<br> 
                             
                     I have read and understand the information and instructions to appeal for a retroactive withdrawal from prior semester course(s):   
-                </div>     
+            </div>     
                        
                     
-                    </div> 
+        </div> 
                                         
-                </div>                       
+    </div>                       
                     
 
-                    
-                <div class="row">   
-                <div class="col-6">
-                        <label for="studentSign" >Student Signature</label>
-							<input type="text" class="form-control" id="studentSign" placeholder="Signature">
-                </div>
+    <div class="container-fluid">            
+            <div class="row justify-content-center">   
+                    <div class="col-6">
+                            <label for="studentSign" >Student Signature</label>
+							<input type="text" class="form-control reqInput" id="studentSign" placeholder="Signature">
+                    </div>
                         
                     
-                <div class="col-6">
-                        <label for="dateSubmitted" >Date Submitted#:</label>
-							<input type="text" class="form-control" id="dateSubmitted" placeholder="MM/DD/YYYY">
-                </div>
-                </div>     
+                    <div class="col-6">
+                            <label for="dateSubmitted" >Date Submitted#:</label>
+							<input type="text" class="form-control reqInput" id="dateSubmitted" placeholder="MM/DD/YYYY">
+                    </div>
+             </div>     
                 
-                
-                </form>
-            
-            
-            </div>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-	</div>
-	
-	<div class="container-fluid">
-		<div class="row">
-		
-			<div class="col-12 col-md-10 section py-3 schedule">
-			
-			</div>
-		</div>
-	</div>
-	<div class="policy">
-		
-	</div>
-	<div class="action">
+       </div>               
+                    
+    <div class="container-fluid">         
+                    <div class="row">
+                        <div class="col-12"><br><br></div>
+                    </div>              
+    </div>     
+                    
+    <div class="container-fluid">
         <div class="row justify-content-center" id="pagebottom">
         <button type="button" class="btn logOutButton col-2" id="logout">Log out</button>
-        <button type="button" class="btn submitButton col-2 offset-3" id="submit">Submit Form</button>      
+        <button role="button" type="submit" class="btn col-2 offset-3" id="submitBtn">Submit Form</button>      
         </div>
 		
 	</div>
 	
+	            
+                    
+                            
+               
+            
+        
+        </div> <!--DIV ROW SECOND HALF-->
+     
+    </form>  <!--FORM-->     
+	
+
     
     <script src="studentFormScript.js"></script>
     

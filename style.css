@@ -314,7 +314,7 @@ h1{
 
 
 
-#submit{
+#submitBtn{
     
     border: 3px solid green;
 }
@@ -341,17 +341,21 @@ hr {
 
 
 .usscOnlyUse{
-    padding-bottom: 30px;
+    padding-bottom: 100px;
+    position: relative;
+    
     
 }
 
+.bottom{
+    position: absolute;
+}
 
 .blocked{
-    background color: red;
+    background-color: grey;
     opacity: 0.5;
     width: 100%;
     height: 100%;
-    position: absolute;
     z-index: 9;
 }
 
