@@ -1,3 +1,4 @@
+
 var title = document.title;
 let usscInputs = document.getElementsByClassName("ussc");
 let submission = document.getElementById("submitBtn");
@@ -64,6 +65,4 @@ submission.addEventListener("click", (e)=>{
         
     });
                                                  
-
-
 
