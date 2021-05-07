@@ -125,6 +125,14 @@ function goToUrl($url) {
                    
                
            
+       }else{
+           
+           
+           echo "WRONG USER NAME AND PASSWORD"; 
+           sleep(2);
+            goToUrl('https://venus.cs.qc.cuny.edu/~famd7995/final/login.html');
+           
+           
        }//end of username check studennt
        
       
