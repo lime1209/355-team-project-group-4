@@ -1,7 +1,5 @@
 var title = document.title;
-let usscRow = document.getElementsByClassName("row usscOnlyUse")[0];
 let usscInputs = document.getElementsByClassName("ussc");
-
 let submission = document.getElementById("submitBtn");
 let requiredInput = document.getElementsByClassName("reqInput");
 
@@ -12,11 +10,7 @@ if(title == "Student Form"){
     
 
     console.log("this is the student form USSC inputs will be disabled for student");
-    let blockedBorder = document.createElement("div");
-    blockedBorder.className = "blocked";
-    
-    //usscRow.insertBefore(blockedBorder,usscRow.children[0]);
-    //console.log(usscRow.children[1])
+  
     
     for(let i = 0; i < usscInputs.length; i++){
         usscInputs[i].setAttribute("disabled","disabled");
@@ -37,7 +31,7 @@ form.addEventListener("submit", (e)=>{
   
     for(let i=0; i < requiredInput.length; i++){
        
-       
+       e.preventDefault();
        
        if(requiredInput[i].value == ""){
            
