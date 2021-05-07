@@ -84,7 +84,7 @@ function goToUrl($url) {
  
            }else{
                //SUCCESS STUDENT AND PASSWORD MATCH
-               goToUrl('https://venus.cs.qc.cuny.edu/~famd7995/final/StudentsPage/StudentsPage.html');
+               goToUrl('https://venus.cs.qc.cuny.edu/~famd7995/final/StudentsPage.html');
   
            }
            
@@ -92,7 +92,7 @@ function goToUrl($url) {
        }elseif($row2 = mysqli_fetch_array($result2)){
            
         /////////////////////////////////  
-       
+        
 
                    
                    if($pass != $row2["adminPassword"]){ //theres a admin that exists with this name but password doesnt match
