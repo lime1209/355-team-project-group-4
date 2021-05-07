@@ -19,7 +19,7 @@
 			</div>
 		</div>
 	</div>
-    <a href="file:///Users/meiheliu/Documents/2021%20Spring/CSCI%20355/team%20project/Form.html"><input type="button" value='Start An Application'></a>
+    <button type=button id="start">Start An Application</button>
 
     <h5>Courses Requested to Withdrawal:</h5>
 	
@@ -47,6 +47,7 @@
 					<td class="units"></td>
 					<td class="status"></td>
 				</tr>
+				
 			</table>
 			</div>
 		</div>
@@ -71,15 +72,7 @@
 	<div class="action">
 		<button type=button id="logout">Log out</button>
 	</div>
-    <script type="text/javascript">
-    let log_out = document.getElementById("logout");
-    log_out.addEventListener("click", (event)=>{
-        event.preventDefault();
-        window.location.replace("file:///Users/meiheliu/Documents/2021%20Spring/CSCI%20355/team%20project/LoginPage.html");
-        
-    })
-    
-    
-    </script>
+    <script src="studentsPageScript.js"></script>
+   
 </body>
 </html>

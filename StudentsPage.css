@@ -23,6 +23,13 @@ table, th, td{
     border-width: medium;
     border-color: red;
 }
-.submit{
-    
+#start{
+    margin-left: 50px;
+    border: 3px solid green;
+}
+
+#logout{
+    margin-left: 50px;
+    margin-top: 30px;
+    border: 3px solid red;
 }
