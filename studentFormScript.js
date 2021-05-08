@@ -39,6 +39,8 @@ selection1.type = 'checkbox';
 selection2.type = 'checkbox';
 selection3.type = 'checkbox';    
 selection4.type = 'checkbox';    
+
+   
     
 var xhr = new XMLHttpRequest();
     xhr.open("POST", "connection_Courses.php");
@@ -55,7 +57,7 @@ var xhr = new XMLHttpRequest();
          let instructor;
          let grade;
          
-         for(let i = 0; i < dataArr.length; i++){
+         for(let i = 0; i < dataArr.length-1; i++){
              
               let trElement = document.createElement("tr");
              
@@ -75,21 +77,23 @@ var xhr = new XMLHttpRequest();
              let col3 = document.createElement("td");
              let col4 = document.createElement("td");
              
-             if(i=0){
+             if(i==0){
                  
                  col.appendChild(selection0);
-             }else if(i=1){
-                      
+                 
+             }else if(i==1){
+                       
                  col.appendChild(selection1);
-            }else if(i=2){
-                      
+            }else if(i==2){
+                       
                  col.appendChild(selection2);
                  
-            }else if(i=3){
+            }else if(i==3){
+                 
                   col.appendChild(selection3); 
                 
-             }else if(i=4){
-                 
+             }else if(i==4){
+                  
                  col.appendChild(selection4);
                  
              }
@@ -128,7 +132,64 @@ var xhr = new XMLHttpRequest();
     
    xhr.send();
 
-
+    
+    
+    /*
+ //course desc
+     let col1 = document.getElementById("col1").childNodes;
+//course id
+     let col2 = document.getElementById("col2").childNodes;
+//year
+     let col3 = document.getElementById("col3").childNodes;
+//isn
+     let col4 = document.getElementById("col4").childNodes;
+    
+//grad
+     let col5 = document.getElementById("col5").childNodes;
+    ;
+var hold = [false,false,false,false,false];    
+    
+    console.log(col1[1]);
+    
+  selection0.addEventListener("onchange", (e)=>{
+      
+      if(hold[0] == false){
+          hold[0] = true;
+      }else{
+          hold[0] = false; 
+      }
+      
+      
+      if(hold[0]){
+          
+          
+          
+          
+          
+          
+          
+      }else{
+          
+          
+          
+          
+      }
+      
+  });
+    
+    
+    */
+    
+    
+    
+    
+    
+    
+    
+    
+    
+     
+    
 form.addEventListener("submit", (e)=>{
     
     
