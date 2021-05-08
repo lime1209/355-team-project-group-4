@@ -80,11 +80,24 @@ function goToUrl($url) {
            
            if($pass != $row["studentPassword"]){ //theres a student that exists with this name but password doesnt match
             
+               
+               
+               
                goToUrl('https://venus.cs.qc.cuny.edu/~famd7995/final/login.html');
+               
+
+               
+               
  
            }else{
                //SUCCESS STUDENT AND PASSWORD MATCH
-               goToUrl('https://venus.cs.qc.cuny.edu/~famd7995/final/StudentsPage.html');
+               
+               
+               //create session to save current username
+               session_start();
+               $_SESSION['user'] = $user;
+               $_SESSION['userType'] = "Students";     
+                goToUrl('https://venus.cs.qc.cuny.edu/~famd7995/final/StudentsPage.html');
   
            }
            
@@ -101,7 +114,13 @@ function goToUrl($url) {
  
                     }else{
                //SUCCESS admin AND PASSWORD MATCH
-                goToUrl('https://venus.cs.qc.cuny.edu/~famd7995/final/admin_page/admin.html');
+               
+                       
+               session_start();
+               $_SESSION['user'] = $user;
+               $_SESSION['userType'] = "Administrator";  
+                       
+                       goToUrl('https://venus.cs.qc.cuny.edu/~famd7995/final/admin_page/admin.html');
   
                 }
                    
@@ -116,6 +135,11 @@ function goToUrl($url) {
  
                     }else{
                //SUCCESS admin AND PASSWORD MATCH
+                       
+                       
+                 session_start();
+               $_SESSION['user'] = $user;
+               $_SESSION['userType'] = "Staffs"; 
                 goToUrl('https://venus.cs.qc.cuny.edu/~famd7995/final/staffs_page.html');
   
                   } 
@@ -127,9 +151,7 @@ function goToUrl($url) {
            
        }else{
            
-           
-           echo "WRONG USER NAME AND PASSWORD"; 
-           sleep(2);
+          
             goToUrl('https://venus.cs.qc.cuny.edu/~famd7995/final/login.html');
            
            

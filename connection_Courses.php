@@ -20,16 +20,29 @@
 		ini_set('display_startup_errors', 1);
 		error_reporting(E_ALL);
        
-       echo "connection success";
+      
        
        
        
-       $query = "SELECT * FROM `Students`";
+     
+       session_start();
+       //session start
+       
+       $query = '
+SELECT studentUsername, courseDescription, courseNum , staffName, semesterYear, studentGrade
+FROM kcbh8602.Students 
+join StudentCourseHistory
+on Students.studentID = StudentCourseHistory.studentID 
+join Courses
+on StudentCourseHistory.courseID = Courses.courseID
+join Staffs
+on StudentCourseHistory.staffID = Staffs.staffID
+where studentUsername = "'.$_SESSION['user'].'"';
        $result = mysqli_query($conn, $query);
        
        while($row = mysqli_fetch_array($result)){
-       echo "".$row["studentName"]." ".$row["studentUsername"]."<br>";
-       
+           
+           echo "".$row["courseDescription"]."| ".$row["courseNum"]."| ".$row["staffName"]."| ".$row["semesterYear"]."|".$row["studentGrade"]."| ?";
        }
        
        
